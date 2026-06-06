@@ -15,7 +15,7 @@ def home():
 
     return {"message":"Salary Prediction API"}
 
-@app.post('/pedict')
+@app.post('/predict')
 def predict(data : UserInput):
 
     preediction = model.predict([[data.experience]])
